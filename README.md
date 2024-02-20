@@ -4,9 +4,12 @@ As you know, Command Injection is a security vulnerability with critical severit
 
 I have good news for hackers and pen testers. I made it easier by my new python script. The only thing you should do, is exporting your packets as a burp suit state file. The rest of steps will done by my script. I called me script “Burp-TO-Commix” and I will explain the test process from the beginning.
 
+You can find the latest version of commix in the repository below
+https://github.com/commixproject/commix
+
 Usage
 
-    Usage: ./burp-to-commix.py [options]
+    Usage: ./burp2commix.py [options]
 
     Options: -f, --file
 
@@ -17,7 +20,7 @@ Usage
     Options: -c, --switch commix
 
 
-    Example: python burp-to-commix.py -f [BURP-STATE-FILE] -o [OUTPUT-DIRECTORY] -s [SQLMap-Path] -c ["Commix-Switch"]
+    Example: python burp2commix.py -f [BURP-STATE-FILE] -o [OUTPUT-DIRECTORY] -s [SQLMap-Path] -c ["Commix-Switch"]
 
 python burp2commix.py -s "./" -f "./in-file" -o "./out-file" -c " --proxy=http://127.0.0.1:8081 --cookie=  --batch"
 
